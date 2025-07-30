@@ -9,7 +9,9 @@ from sklearn.linear_model import LinearRegression
 
 
 def load_model():
-    with open(r'C:\Users\preet\OneDrive\Desktop\Sabarish DS\Stud_learning_App\Student_Performance_model.pkl','rb') as file:
+    with open('Student_Performance_model.pkl', 'rb') as file:
+
+    #with open(r'C:\Users\preet\OneDrive\Desktop\Sabarish DS\Stud_learning_App\Student_Performance_model.pkl','rb') as file:
         model,scaler,le =pickle.load(file)
     return model, scaler, le
 
